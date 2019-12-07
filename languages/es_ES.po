@@ -56,7 +56,7 @@ msgstr "Envíe un reportaje"
 
 #: ../header.php:80
 msgid "Follow us"
-msgstr "Siguenos"
+msgstr "Síguenos"
 
 #: ../functions.php:44
 msgid "stories"
@@ -104,11 +104,11 @@ msgstr "Ver infografía"
 
 #: ../functions.php:62
 msgid "View infographics"
-msgstr "Ver infografía"
+msgstr "Ver infografías"
 
 #: ../functions.php:85
 msgid "Success! Thank you, your story will be reviewed by one of our editors and soon will be online."
-msgstr "¡Gracias! Tu artículo será revisado por uno de nuestros editores y luego online"
+msgstr "¡Gracias! Tu artículo será revisado por uno de nuestros editores y pronto estará en línea"
 
 #: ../functions.php:86
 msgid "Oops, please try again in a few minutes."
@@ -120,7 +120,7 @@ msgstr "Widgets principales"
 
 #: ../functions.php:117
 msgid "Widgets used on front and inside pages."
-msgstr "Widgets utilizados en la página principal e internas."
+msgstr "Widgets utilizados en la página principal e interiores."
 
 #: ../functions.php:268
 msgid "Search for stories"
@@ -191,7 +191,7 @@ msgstr "Archivos"
 
 #: ../section-submit-call.php:2
 msgid "Do you have news to share from the Amazon? Contribute to this map by submitting your story. Help broaden the understanding of the global impact of this important region in the world."
-msgstr "¿Tienes alguna noticia para compartir sobre la Amazonia? Contribuya a este mapa enviando un reportaje. Ayude a ampliar el entendimiento del impacto global de esta importante región. "
+msgstr "¿Tienes alguna noticia para compartir sobre la Amazonia? Contribuya a este mapa enviando un reportaje. Ayude a ampliar el entendimiento del impacto global de esta importante región."
 
 #: ../section-publisher-description.php:7
 msgid "Visit"
@@ -281,7 +281,7 @@ msgstr "Anchura y altura"
 
 #: ../content-share.php:116
 msgid "Select the width and height proportions you would like to embed to be."
-msgstr "Seleccione la anchura y la altura de las proporciones que le gustaría incorporar a ser."
+msgstr "Seleccione las proporciones de ancho y alto que desea incorporar."
 
 #: ../content-share.php:121
 msgid "Small"
@@ -313,7 +313,7 @@ msgstr "Buscar"
 
 #: ../index.php:24
 msgid "Highlights"
-msgstr "destacados"
+msgstr "Destacados"
 
 #: ../index.php:36
 msgid "Last stories"
@@ -452,7 +452,7 @@ msgstr "Nombre completo"
 #: ../inc/submit-story.php:31
 #: ../inc/submit-story.php:89
 msgid "E-mail"
-msgstr "Email"
+msgstr "Correo electrónico"
 
 #: ../inc/submit-story.php:35
 msgid "Reporter"
@@ -469,7 +469,7 @@ msgstr "Texto de la noticia"
 #: ../inc/submit-story.php:47
 #: ../inc/submit-story.php:93
 msgid "Story url"
-msgstr "Link para la noticia"
+msgstr "Enlace para la noticia"
 
 #: ../inc/submit-story.php:51
 msgid "Lead picture"
@@ -497,7 +497,7 @@ msgstr "Longitud:"
 
 #: ../inc/submit-story.php:73
 msgid "Publishing date"
-msgstr "Fecha de publicação"
+msgstr "Fecha de publicación"
 
 #: ../inc/submit-story.php:77
 msgid "Notes to the ekuatorial editor"
@@ -510,7 +510,7 @@ msgstr "Enviar noticia"
 
 #: ../inc/submit-story.php:135
 msgid "Missing information. Please fill all the required fields!"
-msgstr "Completa todos los campos obligatorios"
+msgstr "Información faltante. Completa todos los campos obligatorios"
 
 #: ../inc/submit-story.php:144
 msgid "Could not save submission"
@@ -538,18 +538,18 @@ msgstr "Categorías separadas por comas"
 
 #: ../inc/category-feeds-widget.php:43
 msgid "RSS Feed"
-msgstr "RSS RSS"
+msgstr "Canal RSS"
 
 #: ../inc/ajax-calendar.php:15
 msgid "AJAX Powered Calendar"
-msgstr "AJAX Powered Calendario"
+msgstr "Calendario basado en AJAX"
 
 #: ../inc/ajax-calendar.php:18
 #: ../inc/ajax-calendar.php:28
 #: ../inc/ajax-calendar.php:46
 #: ../inc/ajax-calendar.php:113
 msgid "AJAX Calendar"
-msgstr "AJAX Calendar"
+msgstr "Calendario basado en AJAX"
 
 #: ../inc/ajax-calendar.php:75
 msgid "Stories calendar"
@@ -569,7 +569,7 @@ msgstr "Nombre del Autor"
 
 #: ../inc/metaboxes/story/story-meta.php:32
 msgid "Author email"
-msgstr "Email del autor"
+msgstr "Correo electrónico del autor"
 
 #: ../inc/metaboxes/featured/featured.php:9
 msgid "Featured post"

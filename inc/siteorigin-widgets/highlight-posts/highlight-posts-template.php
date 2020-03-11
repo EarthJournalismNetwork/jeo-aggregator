@@ -23,6 +23,8 @@ if($highlight_post->have_posts()) :
     $tracking = '';
   }
 
+  // by mohjak 2020-03-09 fix duplicates first post of the list issue#233
+  $mainPostId = $post_id;
   ?>
   <div class="newsroom-highlight-posts-<?php echo $instance['style'] ?>">
     <article id="<?php echo $instance['panels_info']['id']; ?>-highlight-posts-<?php the_ID(); ?>">
@@ -63,6 +65,7 @@ if($highlight_post->have_posts()) :
     if (isset($GLOBALS['excluded_post']) && $GLOBALS['excluded_post']) {
         $query_args['post__not_in'] = $GLOBALS['excluded_post'];
     }
+    $query_args['posts_per_page'] = 4;
     $highlight_posts_query = new WP_Query($query_args);
     while($highlight_posts_query->have_posts()) :
       $highlight_posts_query->the_post();
@@ -77,25 +80,25 @@ if($highlight_post->have_posts()) :
       }else {
         $tracking = '';
       }
-      ?>
-      <li class="highlight-posts-item">
-        <article id="<?php echo $instance['panels_info']['id']; ?>-highlight-posts-<?php the_ID(); ?>">
-          <div class="highlight-posts-post-content">
-            <a href="<?php the_permalink(); ?>" <?php echo $tracking; ?> class="headline" title="<?php the_title(); ?>"><h2><?php the_title(); ?></h2></a>
-            <?php if (get_post_meta(get_the_ID(), 'is_label', true) == "1"): ?>
-            <a href="#"><span class="label">Belt and Road</span></a>
-            <?php endif; ?>
-            <p class="date"><?php echo get_the_date(); ?>
-            <?php
-              $pub_name = get_post_meta( get_the_ID(), 'pub_name', true);
-              echo '<p class="dateline">' . $pub_name . '</p>';
-            ?>
-          </div>
-        </article>
-      </li>
-      <?php
-      wp_reset_postdata();
+      if (get_the_ID() !== $mainPostId) { ?>
+        <li class="highlight-posts-item">
+          <article id="<?php echo $instance['panels_info']['id']; ?>-highlight-posts-<?php the_ID(); ?>">
+            <div class="highlight-posts-post-content">
+              <a href="<?php the_permalink(); ?>" <?php echo $tracking; ?> class="headline" title="<?php the_title(); ?>"><h2><?php the_title(); ?></h2></a>
+              <?php if (get_post_meta(get_the_ID(), 'is_label', true) == "1"): ?>
+              <a href="#"><span class="label">Belt and Road</span></a>
+              <?php endif; ?>
+              <p class="date"><?php echo get_the_date(); ?>
+              <?php
+                $pub_name = get_post_meta( get_the_ID(), 'pub_name', true);
+                echo '<p class="dateline">' . $pub_name . '</p>';
+              ?>
+            </div>
+          </article>
+        </li>
+      <?php }
       endwhile;
+      wp_reset_postdata();
       ?>
     </ul>
   </div>
